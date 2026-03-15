@@ -1,0 +1,57 @@
+<!doctype html>
+<head>
+  <title>Moving</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="index.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <main id="ui">
+    <div id="game-background">
+      <div class="bg-circle"></div>
+      <div class="bg-circle"></div>
+      <div class="bg-circle"></div>
+    </div>
+    <div id="background"></div>
+    <!-- <div id="resume-overlay"></div> -->
+
+    <div id="health-bar" class="hidden">
+      <div></div>
+    </div>
+    <div id="mana-bar" class="hidden">
+      <div></div>
+    </div>
+
+    <div id="game-menu">
+      <div id="game-menu-collision-box">
+        <h1>In The Dark</h1>
+        <div class="menu-button-list">
+          <button id="start-btn" class="btn-primary">Start</button>
+          <!-- <button id="settings-btn" class="btn-secondary">Settings</button> -->
+          <!-- <button id="exit-btn" class="btn-tertiary">Exit</button> -->
+        </div>
+      </div>
+    </div>
+    <div id="settings"></div>
+    <div id="death-screen" class="hidden">
+      <h1>You Died!</h1>
+      <p id="death-score">Score: 0</p>
+      <p id="death-killed">Enemies Killed: 0</p>
+      <button id="restart-btn" class="btn-primary">Restart</button>
+    </div>
+    <div id="pause-screen" class="hidden">
+      <h1>Paused</h1>
+      <div id="pause-score">Score: 0</div>
+      <div id="pause-killed">Enemies Killed: 0</div>
+      <p>Press SPACE to resume</p>
+    </div>
+  </main>
+  <script type="module" src="index.js"></script>
+</body>
